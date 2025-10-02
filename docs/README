@@ -1,17 +1,17 @@
-#Projeto: Mulheres em Data (Kaggle)
+# Projeto: Mulheres em Data (Kaggle)
 
-Este projeto é parte do meu portfólio de dados.
-Objetivo: aprender ETL, criação simples de bancos no PostgreSQL, GitHub e colocar Power BI em prática.
+Este projeto é parte do meu portfólio de dados, no projeto de extensão do 1º semestre em Banco de Dados.
+Objetivo: aprender ETL, criação simples de bancos no PostgreSQL, GitHub e colocar Power BI em prática com análises das descobertas e possíveis KPI's.
 
-##Estrutura
+## Estrutura
 - **data/raw** → CSV original do Kaggle
 - **data/staging** → CSV limpo (pós-ETL)
 - **src** → scripts Python (ETL)
 - **docs** → documentação do projeto
 - **powerbi** → dashboards criados no Power BI
 
-##Status
-🚧 Em construção (primeira versão do ETL em andamento). --Aceitando pitacos construtivos--
+## Status
+🚧 Em construção (primeira versão do ETL em andamento). _Aceitando pitacos construtivos_
 
 ##Fontes
 https://www.kaggle.com/datasets/datahackers/state-of-data-brazil-20242025
