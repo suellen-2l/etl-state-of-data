@@ -103,7 +103,7 @@ def limpar_dados(df):
         "utilizo_métodos_estatísticos_bayesianos_para_analisar_dados.",
         "utilizo_técnicas_de_nlp_(natural_language_processing)_para_análisar_dados_não_estruturados.",
         "utilizo_métodos_estatísticos_clássicos_(testes_de_hipótese,_análise_multivariada,_sobrevivência,_dados_longitudinais,_inferência_estatistica)_para_analisar_dados.",
-        "utilizo_cadeias_de_markov_ou_hmm\s_para_realizar_análises_de_dados.",
+        "utilizo_cadeias_de_markov_ou_hmm\\s_para_realizar_análises_de_dados.",
         "desenvolvo_técnicas_de_clusterização_(k_means,_spectral,_dbscan_etc).",
         "realizo_previsões_através_de_modelos_de_séries_temporais_(time_series).",
         "utilizo_modelos_de_reinforcement_learning_(aprendizado_por_reforço).",
@@ -163,9 +163,9 @@ def limpar_dados(df):
         "processo_e_analiso_dados_utilizando_linguagens_de_programação_como_python,_r_etc.",
         "realizo_construções_de_dashboards_em_ferramentas_de_bi_como_powerbi,_tableau,_looker,_qlik_etc.",
         "crio_consultas_através_da_linguagem_sql_para_exportar_informações_e_compartilhar_com_as_áreas_de_negócio.",
-        "utilizo_api\s_para_extrair_dados_e_complementar_minhas_análises.",
+        "utilizo_api\\s_para_extrair_dados_e_complementar_minhas_análises.",
         "realizo_experimentos_e_estudos_utilizando_metodologias_estatísticas_como_teste_de_hipótese,_modelos_de_regressão_etc.",
-        "desenvolvo/cuido_da_manutenção_de_etl\s_utilizando_tecnologias_como_talend,_pentaho,_airflow,_dataflow_etc.",
+        "desenvolvo/cuido_da_manutenção_de_etl\\s_utilizando_tecnologias_como_talend,_pentaho,_airflow,_dataflow_etc.",
         "atuo_na_modelagem_dos_dados,_com_o_objetivo_de_criar_conjuntos_de_dados_como_data_warehouses,_data_marts_etc.",
         "desenvolvo/cuido_da_manutenção_de_planilhas_para_atender_as_áreas_de_negócio.",
         "utilizo_ferramentas_avançadas_de_estatística_como_sas,_spss,_stata_etc,_para_realizar_análises_de_dados."
@@ -334,7 +334,17 @@ def limpar_dados(df):
         "arquiteto_de_dados/data_architect",
         "data_product_manager/dpm",
         "business_analyst",
-        "ml_engineer/ai_engineer"
+        "ml_engineer/ai_engineer",
+        "remuneração/salário",
+        "benefícios",
+        "propósito_do_trabalho_e_da_empresa",
+        "flexibilidade_de_trabalho_remoto",
+        "ambiente_e_clima_de_trabalho",
+        "oportunidade_de_aprendizado_e_trabalhar_com_referências",
+        "plano_de_carreira_e_oportunidades_de_crescimento",
+        "maturidade_da_empresa_em_termos_de_tecnologia_e_dados",
+        "qualidade_dos_gestores_e_líderes",
+        "reputação_que_a_empresa_tem_no_mercado"
     ]
 
     # Removendo colunas
@@ -366,24 +376,6 @@ def main():
     for col, dtype in df_limpo.dtypes.items():
         print(f"{col}: {dtype}")
 
-    colunas_para_amostra = [
-        "satisfeito_atualmente",
-        "remuneração/salário",
-        "benefícios",
-        "propósito_do_trabalho_e_da_empresa",
-        "flexibilidade_de_trabalho_remoto",
-        "ambiente_e_clima_de_trabalho",
-        "oportunidade_de_aprendizado_e_trabalhar_com_referências",
-        "oportunidades_de_crescimento",
-        "maturidade_da_empresa_em_termos_de_tecnologia_e_dados",
-        "relação_com_os_gestores_e_líderes",
-        "reputação_que_a_empresa_tem_no_mercado",
-        "gostaria_de_trabalhar_em_outra_área"
-
-    ]
-
-    print("\nAmostra aleatória de 10 linhas das colunas selecionadas:")
-    print(df_limpo[colunas_para_amostra].sample(20, random_state=42).to_string(max_cols=15))
 
     salvar_dados(df_limpo, STAGING_PATH)
 
